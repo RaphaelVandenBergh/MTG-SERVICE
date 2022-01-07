@@ -3,10 +3,17 @@ package fact.it.mtgservice.model;
 public class Card {
     private int id;
     private String name;
-    private String Type;
+    private String type;
     private int cost;
 
     public Card() {
+    }
+
+    public Card(int id, String name, String type, int cost) {
+        this.id = id;
+        this.name = name;
+        this.type = type;
+        this.cost = cost;
     }
 
     public int getId() {
@@ -26,11 +33,11 @@ public class Card {
     }
 
     public String getType() {
-        return Type;
+        return type;
     }
 
     public void setType(String type) {
-        Type = type;
+        this.type = type;
     }
 
     public int getCost() {

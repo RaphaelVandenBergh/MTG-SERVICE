@@ -9,18 +9,18 @@ public class DeckOverview {
     private String author;
     private String[] cards;
     private String colors;
-    private String type;
-    private int cost;
     private List<Card> cardList;
 
-    public DeckOverview(String deckname, String author, String[] cards, String colors, String type, int cost, List<Card> cardList) {
+    public DeckOverview(String deckname, String author, String[] cards, String colors, List<Card> cardList) {
         this.deckname = deckname;
         this.author = author;
         this.cards = cards;
         this.colors = colors;
-        this.type = type;
-        this.cost = cost;
         this.cardList = cardList;
+    }
+
+    public DeckOverview() {
+
     }
 
     public String getDeckname() {
@@ -55,21 +55,6 @@ public class DeckOverview {
         this.colors = colors;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public int getCost() {
-        return cost;
-    }
-
-    public void setCost(int cost) {
-        this.cost = cost;
-    }
 
     public List<Card> getCardList() {
         return cardList;

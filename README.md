@@ -5,5 +5,4 @@ https://github.com/RaphaelVandenBergh/APT-MTG-Cards
 Decks bevat info over decklists (naam, author, lijst met kaarten, colors)
 https://github.com/Brentvds12/APT-MTG-decks
 
-Hieronder een schema van onze architectuur:
 ![Schema](./architectuur.png)
